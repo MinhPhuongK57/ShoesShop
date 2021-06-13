@@ -28,7 +28,8 @@
 	<script src="js/menu_jquery.js"></script>
 	<!-- //End menu -->
 	<!---slider---->
-	<link rel="stylesheet" href="css/slippry.css">
+	<link rel="stylesheet" href="<?php echo $level.css__path.'slippry.css'?>">
+	<link rel="stylesheet" href="<?php echo $level.css__path.'sb-admin-2.css'?>">
 	<script src="<?php echo $level.js__path.'jquery-ui.js' ?>" type="text/javascript"></script>
 	<script src="<?php echo $level.js__path.'scripts-f0e4e0c2.js' ?>" type="text/javascript"></script>
 	<script>
@@ -54,4 +55,8 @@
 		});
 	</script>
 	<!---//move-top-top---->
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://hocwebgiare.com/thiet_ke_web_chuan_demo/bootstrap_pickcolor/css/pick-a-color-1.2.3.min.css"> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script><script src="http://hocwebgiare.com/thiet_ke_web_chuan_demo/bootstrap_pickcolor/js/pick-a-color-1.2.3.min.js"></script><script src="http://hocwebgiare.com/thiet_ke_web_chuan_demo/bootstrap_pickcolor/js/tinycolor-0.9.15.min.js"></script>
 </head>

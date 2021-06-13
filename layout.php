@@ -27,6 +27,10 @@
     {
         include $level.com__path.'head__change-account.php';
     }
+    if($isCart == true)
+    {
+        include $level.com__path.'head__cart.php';
+    }
     //Header__website
     include $level.hea__path.'top__header.php';
     include $level.hea__path.'mid__header.php';
@@ -81,6 +85,10 @@
     if($isChangeAccount == true)
     {
         include $level.com__path.'account__content.php';
+    }
+    if($isCart == true)
+    {
+        include $level.com__path.'cart__content.php';
     }
     //Footer__website
     include $level.com__path.'bottom-content__info.php';

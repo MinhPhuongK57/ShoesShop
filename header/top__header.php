@@ -29,7 +29,9 @@
 						<!---//cart-tonggle-script---->
 						<li><a class="cart" href="#"><span id="clickme"> </span></a></li>
 						<!---start-cart-bag---->
-						<div id="cart">Your Cart <span>(0)</span></div>
+						<div id="cart">Your Cart <span>(0)</span> <a href="<?php echo $level."cart.php" ?>"
+						
+						 style="color:white; background:#4e73df; padding:0.5px">DETAIL</a></div>
 						<!---start-cart-bag---->
 						<li><a class="info" href="#"><span> </span></a></li>
 					</ul>
@@ -56,5 +58,6 @@
 				<div class="clear"> </div>
 			</div>
 		</div>
+		<a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"> </span></a>
 
 	

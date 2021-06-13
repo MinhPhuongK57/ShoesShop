@@ -2,78 +2,71 @@
 	$level = "";
 	include $level."index__data.php";
 ?>
-				<div class="product-grids">
-					<!--- start-rate---->
-					<script src="<?php echo $level.js__path.'jstarbox.js' ?>"></script>
-					<link rel="stylesheet" href="<?php echo $level.css__path.'jstarbox.css' ?>" type="text/css" media="screen" charset="utf-8" />
-					<script type="text/javascript">
-						jQuery(function () {
-							jQuery('.starbox').each(function () {
-								var starbox = jQuery(this);
-								starbox.starbox({
-									average: starbox.attr('data-start-value'),
-									changeable: starbox.hasClass('unchangeable') ? false : starbox.hasClass('clickonce') ? 'once' : true,
-									ghosting: starbox.hasClass('ghosting'),
-									autoUpdateAverage: starbox.hasClass('autoupdate'),
-									buttons: starbox.hasClass('smooth') ? false : starbox.attr('data-button-count') || 5,
-									stars: starbox.attr('data-star-count') || 5
-								}).bind('starbox-value-changed', function (event, value) {
-									if (starbox.hasClass('random')) {
-										var val = Math.random();
-										starbox.next().text(' ' + val);
-										return val;
-									}
-								})
-							});
-						});
-					</script>
-					<!---//End-rate---->
-					<?php foreach ($list__product_rowsdata as $mangpro)
-					{
-					?>
-						<div onclick="location.href='details.php';" class="product-grid fade">
-							<div class="product-grid-head">
-								<ul class="grid-social">
-									<li><a class="facebook" href="#"><span> </span></a></li>
-									<li><a class="twitter" href="#"><span> </span></a></li>
-									<li><a class="googlep" href="#"><span> </span></a></li>
-									<div class="clear"> </div>
-								</ul>
-								<div class="block">
-									<div class="starbox small ghosting"> </div> <span> <?php echo "(".$mangpro["total"].")" ?></span>
-								</div>
-							</div>
-							<div class="product-pic">
-								<a href="#"><img src="<?php echo $level.img__path.$mangpro["productimage"] ?>" title="product-name" /></a>
-								<p>
-									<a href="#"><small><?php echo $mangpro["id_producttype"] ?></small> <?php echo $mangpro["id_provider"] ?> <small><?php echo $mangpro["color"] ?></small> <?php echo $mangpro["size"] ?> <?php echo $mangpro["productname"] ?></a>
-									<span><?php echo $mangpro["description"] ?></span>
-								</p>
-							</div>
-							<div class="product-info">
-								<div class="product-info-cust">
-									<a href="details.php" title ="Details product">DETAILS</a>
-								</div>
-								<div class="product-info-price">
-									<a href="details.php">&#163; <?php echo $mangpro["price"] ?></a>
-								</div>
-								<div class="clear"> </div>
-							</div>
-							<div class="more-product-info">
-								<span title="Add product"></span>
-							</div>
-						</div>
-					<?php 
-					}
-					?>
-					<div class="clear"> </div>
-				</div>
-				<!----start-load-more-products---->
-				<div class="loadmore-products">
-					<a href="#">Loadmore</a>
-				</div>
-				<!----//End-load-more-products---->
+				<!-- Begin Page Content -->
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+	<!-- Page Heading -->
+	<h1 class="h3 mb-2 text-gray-800"><code>CART</code></h1>
+
+	<!-- Database Shoes Shop -->
+	<div class="card shadow mb-4">
+		<div class="card-header py-3">
+			<h6 class="m-0 font-weight-bold text-primary">List of cart</h6>
+		</div>
+		<div class="card-body">
+			<div class="table-responsive">
+				<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+					<thead>
+						<tr>
+							<th>Product Name</th>
+							<th>Product Image</th>
+							<th>Price</th>
+							<th>Total</th>
+							<th>Size</th>
+							<th>Color</th>
+							<th style="border-right:none"></th>
+							<th style="border-left:none;border-right:none"></th>
+							<th style="border-left:none;"></th>
+						</tr>
+					</thead>
+					<tbody>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								</td><td>
+								<!-- <input value="" name="border-color" class="pick-a-color form-control" type="text">
+								<input value="" name="font-color" class="pick-a-color form-control" type="text"> 
+								<input value="" name="backgound-color" class="pick-a-color form-control" type="text"> 
+								<input value="" name="highlight-color" class="pick-a-color form-control" type="text"> 
+								<input value="" name="contrast-color" class="pick-a-color form-control" type="text">
+								<input class="pick-a-color form-control" disabled="" type="text"> 
+								<input class="pick-a-color form-control" type="text">  -->
+								<td><a href="#" class="btn btn-primary">Buy now</a></td>
+								<td><a href="#" class="btn btn-success">Update</a></td>
+								<td><a href="#" class="btn btn-danger">Delete</a></td>  
+							</tr>
+					</tbody>
+				</table>
 			</div>
-			<div class="clear"> </div>
 		</div>
 	</div>
+</div>
+<script>
+	$(document).ready(function () {
+ 
+	$(".pick-a-color").pickAColor({             
+	showSpectrum: true, 
+	showSavedColors:true,   
+	saveColorsPerElement:true,  
+	fadeMenuToggle:true,    
+	showAdvanced:true,  
+	showBasicColors: true,  
+	showHexInput:true,  
+	allowBlank:true,inlineDropdown:true 
+	}); 
+		});
+</script>
