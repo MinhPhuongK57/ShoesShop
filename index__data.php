@@ -13,7 +13,7 @@
    	
     $email = isset($_POST['emailcus']) ? $_POST['emailcus'] : '';
     $password = isset($_POST['passwordcus']) ? $_POST['passwordcus'] : '';
-    $SQL_customer = "SELECT email from customer_account where email = '$email' and password = '$password' ";
+    $SQL_customer = "SELECT email, username from customer_account where email = '$email' and password = '$password' ";
     $list__customer = $connect->prepare($SQL_customer);
     $list__customer -> execute();
     $list__customer_rowsdata = $list__customer ->fetchAll();
@@ -26,4 +26,17 @@
     $list__product_detail -> execute();
     $list__product_detail_rowsdata = $list__product_detail ->fetchAll();
 
+     //customer account
+   	
+     $gmail = isset($_COOKIE["gmail"]) ? "| LogOut" : "| LogIn";
+     $list__customerupdate = $connect->prepare("SELECT * from customer_account where email = '$gmail' ");
+     $list__customerupdate -> execute();
+     $list__customerupdate_rowsdata = $list__customerupdate ->fetchAll();
+     
+
+     $SQL_str_listproduct_x = "SELECT * from product";
+     $list__product_x = $connect->prepare($SQL_str_listproduct_x);
+     $list__product_x -> execute();
+     $list__product_x_rowsdata = $list__product_x ->fetchAll();
+ 
 ?>

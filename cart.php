@@ -10,4 +10,6 @@
 	$isChangeAccount = false;
 	include $level.'config.php';
 	include $level.'layout.php';
+
+	
 ?>

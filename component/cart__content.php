@@ -31,42 +31,22 @@
 						</tr>
 					</thead>
 					<tbody>
+					<?php foreach ($list__product_x_rowsdata as $row){?>
 							<tr>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								</td><td>
-								<!-- <input value="" name="border-color" class="pick-a-color form-control" type="text">
-								<input value="" name="font-color" class="pick-a-color form-control" type="text"> 
-								<input value="" name="backgound-color" class="pick-a-color form-control" type="text"> 
-								<input value="" name="highlight-color" class="pick-a-color form-control" type="text"> 
-								<input value="" name="contrast-color" class="pick-a-color form-control" type="text">
-								<input class="pick-a-color form-control" disabled="" type="text"> 
-								<input class="pick-a-color form-control" type="text">  -->
+								<td><?php echo $level.$row['productname']?></td>
+								<td><img src="<?php echo $level.img__path.$row["productimage"]?>" alt="" style="width:70px;"></td>
+								<td><?php echo $level.$row['price']?></td>
+								<td><input type="number" max="200" min="0" value="<?php echo $level.$row['total']?>" style="width:65px;height:25px;border:1px solid grey;border-radius:3px;outline:grey;"></td>
+								<td><input type="number" max="200" min="0" value="<?php echo $level.$row['size']?>" style="width:65px;height:25px;border:1px solid grey;border-radius:3px;outline:grey;"></td>
+								<td><?php echo $level.$row['color']?></td>
 								<td><a href="#" class="btn btn-primary">Buy now</a></td>
 								<td><a href="#" class="btn btn-success">Update</a></td>
 								<td><a href="#" class="btn btn-danger">Delete</a></td>  
 							</tr>
+					<?php }?>
 					</tbody>
 				</table>
 			</div>
 		</div>
 	</div>
 </div>
-<script>
-	$(document).ready(function () {
- 
-	$(".pick-a-color").pickAColor({             
-	showSpectrum: true, 
-	showSavedColors:true,   
-	saveColorsPerElement:true,  
-	fadeMenuToggle:true,    
-	showAdvanced:true,  
-	showBasicColors: true,  
-	showHexInput:true,  
-	allowBlank:true,inlineDropdown:true 
-	}); 
-		});
-</script>

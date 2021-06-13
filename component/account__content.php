@@ -2,6 +2,8 @@
 	<?php
 	    $level = "";
 		include $level."DB/database.php";
+		$id=isset($_COOKIE["id"]) ? $_COOKIE["id"] : "Guest";
+		$gmail=isset($_COOKIE["gmail"]) ? $_COOKIE["gmail"] : "| LogIn";
 		$err = [];
 		if(isset($_POST['fullname']) )
 		{
@@ -10,8 +12,7 @@
 			$id_card = $_POST['id_card'];
 			$email = $_POST['email'];
 			$address = $_POST['address'];
-			$password = $_POST['password'];
-			$cpassword = $_POST['cpassword'];
+
 			if(empty($fullname))
 			{
 				$err['fullname'] = "Please enter your changed name";	
@@ -33,22 +34,11 @@
 			{
 				$err['address'] = "Please enter your changed address";	
 			}
-			if(empty($password))
-			{
-				$err['password'] = "Please enter your changed password";	
-			}
-			if(empty($cpassword))
-			{
-				$err['cpassword'] = "Please enter your confirm password";	
-			}
-			if($password != $cpassword)
-			{
-				$err['fullname'] = "Please check your confirm password";	
-			}
+			
 			if(empty($err))
 			{
-				$a = "insert into customer_account value(N'$fullname','$phonenum','$id_card','$email','$address','$password', 0)";
-    			$account_customer = $connect->prepare($a);
+				$a = " UPDATE customer_account SET username = N'$fullname' , PhoneNum = '$phonenum', id_card = '$id_card', email = '$email' , address = N'$address' WHERE  email = '$gmail' ";
+				$account_customer = $connect->prepare($a);
     			$account_customer -> execute();
 			}
 
@@ -103,26 +93,12 @@
 						</div>
 						<div class="clear"> </div>
 						<div class="register-bottom-grid">
-							<div>
-								<span>Password<label>*</label></span>
-								<input type="text" name = "password" autocomplete="off">
-								<div class = "has-error"  >
-								<span style="color:red;width:450px;"><?php echo (isset($err['password']))? $err['password'] : ''  ?></span>
-								</div>
-							</div>
-							<div>
-								<span>Confirm Password<label>*</label></span>
-								<input type="text" name = "cpassword" autocomplete = off>
-								<div class = "has-error"  >
-								<span style="color:red;width:450px;"><?php echo (isset($err['cpassword']))? $err['cpassword'] : ''  ?></span>
-								</div>
-							</div>
+
 							<div class="clear"> </div>
 						</div>
 						<div class="clear"> </div>
 						<div style="display:flex;margin-left:10px;">
-                            <input type="submit"  name = "submit-update" value ="UPDATE ACCOUNT">	
-                            <span style="margin-left:10px;"><input type="submit"  name = "submit-lock" value ="ACCOUNT LOCK"></span> </div>	
+                            <input type="submit"  name = "submit-update" value ="UPDATE ACCOUNT">		
 					</form>
 				</div>
 			</div>

@@ -5,11 +5,11 @@
 					<form  action= "customer.php" method="post">
 						<div>
 							<span>Email Address<label>*</label></span>
-							<input type="text" name ="emailcus" autocomplete="off"/>
+							<input type="text" name ="emailcus"/>
 						</div>
 						<div>
 							<span>Password<label>*</label></span>
-							<input type="text" name = "passwordcus" autocomplete="off"/>
+							<input type="text" name = "passwordcus"/>
 						</div>
 						<a class="forgot" href="#">Forgot Your Password?</a>
 						<input type="submit" value="Login" name = "login" />

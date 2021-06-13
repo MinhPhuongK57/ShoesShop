@@ -45,6 +45,10 @@
         include $level.com__path.'index__content--left.php';
         include $level.com__path.'index__content--right.php';
     }
+    if($isCart == true)
+    {
+        include $level.com__path.'cart__content.php';
+    }
 
     //Products
     if($isProducts == true)
@@ -85,10 +89,6 @@
     if($isChangeAccount == true)
     {
         include $level.com__path.'account__content.php';
-    }
-    if($isCart == true)
-    {
-        include $level.com__path.'cart__content.php';
     }
     //Footer__website
     include $level.com__path.'bottom-content__info.php';

@@ -1,4 +1,8 @@
-
+<?php
+	$id=isset($_COOKIE["id"]) ? $_COOKIE["id"] : "Guest";
+	$gmail=isset($_COOKIE["gmail"]) ? "| LogOut" : "| LogIn";
+	
+?>
 <body>
 	<!---start-wrap---->
 	<!---start-header---->
@@ -29,9 +33,8 @@
 						<!---//cart-tonggle-script---->
 						<li><a class="cart" href="#"><span id="clickme"> </span></a></li>
 						<!---start-cart-bag---->
-						<div id="cart">Your Cart <span>(0)</span> <a href="<?php echo $level."cart.php" ?>"
 						
-						 style="color:white; background:#4e73df; padding:0.5px">DETAIL</a></div>
+						<div id="cart"><a href="<?php echo $level."cart.php"?>">Your Cart</a> </div>
 						<!---start-cart-bag---->
 						<li><a class="info" href="#"><span> </span></a></li>
 					</ul>
@@ -51,13 +54,13 @@
 				</div>
 				<div class="top-header-right">
 					<ul>
-						<li><a href="login.php">GUEST<span> </span></li>
-						<li><a href="account.php">settings</a></li>
+						<li><a href=""><?php echo $id ?><span> </span></li>
+						<li><a href="account.php">settings</a>><span> </span></li>
+						<li><a href="delete_cookie.php"><?php echo $gmail ?></a></li>
 					</ul>
 				</div>
 				<div class="clear"> </div>
 			</div>
 		</div>
-		<a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"> </span></a>
 
 	
