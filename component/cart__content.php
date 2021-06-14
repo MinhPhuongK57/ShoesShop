@@ -54,6 +54,43 @@
 						<?php endforeach ?>						
 					</tbody>
 				</table>
+				<hr>
+				<!--/////-->
+				<table class="table" style="border-bottom:1px solid #e3e6f0;
+											border-right:1px solid #e3e6f0;
+											border-left:1px solid #e3e6f0; padding-top:-20px"
+											id="dataTable" width="100%" cellspacing="0">
+					<thead>
+						<tr>
+							<th></th>
+							<th></th>
+							<th></th>
+							<th></th>
+							<th></th>
+							<th></th>
+							<th style="border-right:none"></th>
+							<th style="border-left:none;border-right:none"></th>
+							<th style="border-left:none;"></th>
+						</tr>
+					</thead>
+					<tbody>
+							<tr>
+								<td></td>
+								<td></td>
+								<td><span style="margin-right: 10px;;">Total Price</span><input type="text" value="" placeholder="......" disabled></td>
+								<td></td>
+								<td></td>
+								<td><span style="margin-right: 10px;">Quantity</span><input type="text" value="" placeholder="..." disabled></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td><a href="" class="btn btn-danger">Delete All</a></td>  
+								<td><a href="#" class="btn btn-primary">Buy All</a></td>
+							</tr>					
+					</tbody>
+				</table>
+				<!--/////-->
+
 			</div>
 		</div>
 	</div>
