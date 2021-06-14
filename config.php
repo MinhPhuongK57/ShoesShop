@@ -5,4 +5,5 @@
     define ('css__path','css/');
     define ('img__path','images/');
     define ('js__path','js/');
+
 ?>

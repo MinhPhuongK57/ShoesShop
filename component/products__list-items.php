@@ -1,6 +1,6 @@
 <?php
 	$level = "";
-	include $level."index__data.php";
+	include "pages/index__data.php";
 ?>
 				<div class="product-grids">
 					<!--- start-rate---->

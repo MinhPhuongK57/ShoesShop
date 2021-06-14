@@ -1,5 +1,5 @@
 <?php
-	include $level."index__data.php";
+	include "pages/index__data.php";
 	$listdetail = $list__product_detail_rowsdata;
 	
 ?>
@@ -46,7 +46,7 @@
 										<option>6</option>
 									</select>
 								</ul>
-								<a href="cart__test.php"><input type="button" value="add to cart" /></a>
+								<a href="cart.php?id_product=<?php echo $mangdel["id_product"]?>"><input type="button" value="add to cart" /></a>
 								<ul class="product-share">
 									<h3>All so Share On</h3>
 									<ul>

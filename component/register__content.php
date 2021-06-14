@@ -1,7 +1,7 @@
 	<!--- start-content---->
 	<?php
 	    $level = "";
-		include $level."DB/database.php";
+		include $level."database.php";
 		$err = [];
 		if(isset($_POST['fullname']) )
 		{

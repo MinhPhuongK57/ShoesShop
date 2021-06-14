@@ -2,7 +2,7 @@
 				<div class="login-right">
 					<h3>REGISTERED CUSTOMERS</h3>
 					<p>If you have an account with us, please log in.</p>
-					<form  action= "customer.php" method="post">
+					<form  action= "pages/customer.php" method="post">
 						<div>
 							<span>Email Address<label>*</label></span>
 							<input type="text" name ="emailcus"/>

@@ -1,5 +1,6 @@
 <?php
 	$level = "";
+	session_start();
 	$isIndex = false;
 	$isProducts = false;
 	$isDetails= false;

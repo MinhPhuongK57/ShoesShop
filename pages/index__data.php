@@ -1,6 +1,6 @@
 <?php
-    $level = "";
-    include $level."DB/database.php";
+   
+    include "database.php";
 
     //product + search
     $product_search = isset($_POST['SearchData']) ? $_POST['SearchData'] : "";

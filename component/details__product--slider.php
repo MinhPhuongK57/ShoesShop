@@ -25,7 +25,7 @@
 <?php
 
 	$level = "";
-	include $level."DB/database.php";
+	include $level."pages/database.php";
 	$id = isset($_GET['id_product']) ? $_GET['id_product'] : '';
 	$SQL_product_detail = "SELECT * from product where id_product = '$id'";
 	$list__product_detail = $connect->prepare($SQL_product_detail);

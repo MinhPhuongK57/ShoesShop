@@ -1,5 +1,5 @@
 <?php
-	include $level."index__data.php";
+	include "pages/index__data.php";
 ?>
 			<div class="content-right">
 				<div class="product-grids">

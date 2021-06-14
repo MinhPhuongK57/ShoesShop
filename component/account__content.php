@@ -1,7 +1,7 @@
 	<!--- start-content---->
 	<?php
 	    $level = "";
-		include $level."DB/database.php";
+		include $level."pages/database.php";
 		$id=isset($_COOKIE["id"]) ? $_COOKIE["id"] : "Guest";
 		$gmail=isset($_COOKIE["gmail"]) ? $_COOKIE["gmail"] : "| LogIn";
 		$err = [];
