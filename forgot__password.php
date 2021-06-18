@@ -7,8 +7,8 @@
 		$isContact = false;
 		$isLogin = false;
 		$isCart = false;
-        $isChangeAccount = true;
-		$isForgotPassword = false;
+        $isChangeAccount = false;
+		$isForgotPassword = true;
 		include $level.'config.php';
 		include $level.'layout.php';
 ?>

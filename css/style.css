@@ -165,6 +165,26 @@ body{
  -webkit-transition: width 0.5s ease-out;
  transition: width 0.5s ease-out;
 }
+.mid-grid-left input[type="email"]{
+	border: 1px solid #08080B;
+	border-right: none;
+	border-left: none;
+	border-top: none;
+	font-family: 'Open Sans', sans-serif;
+	outline: none;
+	padding: 0.8em 0;
+	color:#A5A5A5;
+	width:85%;
+	-moz-transition: width 0.5s ease-out;
+	 -webkit-transition: width 0.5s ease-out;
+	 transition: width 0.5s ease-out;
+}
+.mid-grid-left input[type="email"]:focus {
+ width:100%;
+ -moz-transition: width 0.5s ease-out;
+ -webkit-transition: width 0.5s ease-out;
+ transition: width 0.5s ease-out;
+}
 .logo span{
 	width: 131px;
 	height: 60px;
@@ -1007,6 +1027,13 @@ h2.resp-accordion:first-child {
 	margin-left: 0.2em;
 }
 .login-right input[type="text"]{
+	border: 1px solid #EEE;
+	outline-color: #E45D5D;
+	width: 96%;
+	font-size: 1em;
+	padding: 0.5em;
+}
+.login-right input[type="email"]{
 	border: 1px solid #EEE;
 	outline-color: #E45D5D;
 	width: 96%;
