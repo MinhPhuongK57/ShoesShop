@@ -31,10 +31,6 @@
     {
         include $level.com__path.'head__cart.php';
     }
-    if($isForgotPassword == true)
-    {
-        include $level.com__path.'head__change-account.php';
-    }
     //Header__website
     include $level.hea__path.'top__header.php';
     include $level.hea__path.'mid__header.php';
@@ -93,10 +89,6 @@
     if($isChangeAccount == true)
     {
         include $level.com__path.'account__content.php';
-    }
-    if($isForgotPassword == true)
-    {
-        include $level.com__path.'forgot__password--content.php';
     }
     //Footer__website
     include $level.com__path.'bottom-content__info.php';

@@ -1,12 +1,9 @@
 <?php
 
 		$level = "";
-    	include $level."pages/database.php";
-		$id = isset($_GET['id_product']) ? $_GET['id_product'] : '';
-		$SQL_product_detail = "SELECT * from product where id_product = '$id'";
-		$list__product_detail = $connect->prepare($SQL_product_detail);
-		$list__product_detail -> execute();
-		$list__product_detail_rowsdata = $list__product_detail ->fetchAll();
+    	include $level."pages/index__data.php";
+		include $level."pages/feedback.php";
+		//var_dump($query);
 
 ?>
 			<!----product-rewies---->
@@ -65,8 +62,29 @@
 								</form>
 							</div>
 							<div>
-								<h3>Customer Reviews</h3>
-								<p>There are no customer reviews yet.</p>
+								<h2>Customer Reviews</h2>
+								<!-- <p  style="color:red;">Customer name</p> -->
+								<form  method="post" enctype="multipart/form-data">
+									<div style="overflow-y:scroll;height:350;">
+										<?php foreach($list__feedback_rowsdata as $feedback): ?>
+											<div style="width:500px;height:auto;position:relative;border:1px solid #f1f1f1;margin-bottom: 5px;border-radius:5px">
+												<span style="display:flex;position:absolute;margin-left: 10px;border-radius:10px">
+													<p style="margin-right: 20px;"><?php echo $feedback["email"]?></p>
+													<p style="margin-left:300px"><?php echo $feedback["date"]?></p>
+												</span>
+												<p style="margin-bottom: 25px;"></p>
+												<p style="width:500px;height:20px;border:none"> <?php echo $feedback["description"]?> </p>
+											</div>
+										
+										<?php endforeach ?>
+									</div>
+									<hr style="width:100%;background:grey;height:0.1px"></hr>
+									<textarea name="discription" id="" cols="100" rows="8" type="input" placeholder="Enter your comment" value = ""
+									style="border-radius: 5px;padding:10px;outline-color:#E45D5D;border-radius:1px solid #EEE"></textarea>
+									<div style="margin-top:20px">
+										<input type="submit" value="Comment">
+									</div>
+								</form>
 							</div>
 						</div>
 					</div>

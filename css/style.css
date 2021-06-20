@@ -165,26 +165,6 @@ body{
  -webkit-transition: width 0.5s ease-out;
  transition: width 0.5s ease-out;
 }
-.mid-grid-left input[type="email"]{
-	border: 1px solid #08080B;
-	border-right: none;
-	border-left: none;
-	border-top: none;
-	font-family: 'Open Sans', sans-serif;
-	outline: none;
-	padding: 0.8em 0;
-	color:#A5A5A5;
-	width:85%;
-	-moz-transition: width 0.5s ease-out;
-	 -webkit-transition: width 0.5s ease-out;
-	 transition: width 0.5s ease-out;
-}
-.mid-grid-left input[type="email"]:focus {
- width:100%;
- -moz-transition: width 0.5s ease-out;
- -webkit-transition: width 0.5s ease-out;
- transition: width 0.5s ease-out;
-}
 .logo span{
 	width: 131px;
 	height: 60px;
@@ -1033,13 +1013,6 @@ h2.resp-accordion:first-child {
 	font-size: 1em;
 	padding: 0.5em;
 }
-.login-right input[type="email"]{
-	border: 1px solid #EEE;
-	outline-color: #E45D5D;
-	width: 96%;
-	font-size: 1em;
-	padding: 0.5em;
-}
 .forgot{
 	color: #08080B;
 	font-weight: 700;
@@ -1706,12 +1679,20 @@ h2.resp-accordion:first-child {
 	background: url(../images/price-border.png) repeat-y 100% 0%;
 }
 /*----*/
+.loadmore-products{
+	display:inline-flex;
+	align-items:center;
+	justify-content: center;
+	flex-direction:row;
+}
 .loadmore-products a{
 	background: #E45D5D;
 	color: #FFF;
 	font-size: 0.875em;
 	padding: 0.9em 1.2em;
 	border-radius: 5px;
+	width:20px;
+	height:20px;
 	border-bottom: 4px solid #B93838;
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
@@ -1731,6 +1712,21 @@ h2.resp-accordion:first-child {
 	background: #1C1C20;
 	border-bottom: 4px solid #333;
 }
+
+.next__page{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:row
+}
+.next__page a{
+	color:red;
+	width:30px;
+	height:30px;
+	background:f1f1f1;
+	box-shadow: 3px 1px 15px 2px rgb(230, 240, 245)
+}
+
 .content-left-top-brands h3{
 	color: #08080B;
 	font-weight: 700;

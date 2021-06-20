@@ -1,7 +1,7 @@
 <?php
 
-	include "pages/session.php";
-	$cart = (isset($_SESSION['cart']) ? $_SESSION['cart'] : [] );
+	//  include "pages/session.php";
+	//  $cart = (isset($_SESSION['cart']) ? $_SESSION['cart'] : [] );
 ?>
 
 				<!-- Begin Page Content -->
@@ -34,7 +34,11 @@
 						</tr>
 					</thead>
 					<tbody>
-						<?php foreach ($cart as $row => $value ):?>
+					<?php  $totalprice = 0; $totalquantity = 0;?>
+						<?php foreach ($cart as $row => $value ): 
+							$totalprice += ($value['price'] * $value['quantity'] );
+							$totalquantity += $value['quantity'];
+						?>
 							<tr>
 								<td><?php echo $value['productname']?></td>
 								<td><img src="<?php echo $level.img__path.$value["productimage"]?>" alt="" style="width:70px;"></td>
@@ -49,7 +53,7 @@
 									<td><button type = "submit" class="btn btn-success">Update</button></td>
 								</form>
 								<td><a href="cart.php?id_product=<?php echo $value['id_product']?>&action=delete" class="btn btn-danger">Delete</a></td>  
-								<td><a href="#" class="btn btn-primary">Buy now</a></td>
+								<td><a href="cart.php?id_product=<?php echo $value['id_product']?>&totalprice=<?php  $price = $value['price']*$value['quantity']; echo $price ?>&quantity=<?php echo $value['quantity']?>&price=<?php echo $value['price']?>&action=buynow" class="btn btn-primary">Buy now</a></td>
 							</tr>
 						<?php endforeach ?>						
 					</tbody>
@@ -77,15 +81,15 @@
 							<tr>
 								<td></td>
 								<td></td>
-								<td><span style="margin-right: 10px;;">Total Price</span><input type="text" value="" placeholder="......" disabled></td>
+								<td><span style="margin-right: 10px;;">Total Price</span><input type="text" value="" placeholder="&#163;<?php echo number_format($totalprice) ?>" disabled></td>
 								<td></td>
 								<td></td>
-								<td><span style="margin-right: 10px;">Quantity</span><input type="text" value="" placeholder="..." disabled></td>
+								<td><span style="margin-right: 10px;">Quantity</span><input type="text" value="" placeholder="<?php echo $totalquantity ?>" disabled></td>
 								<td></td>
 								<td></td>
 								<td></td>
-								<td><a href="" class="btn btn-danger">Delete All</a></td>  
-								<td><a href="#" class="btn btn-primary">Buy All</a></td>
+								<td><a href="cart.php?action=deleteall" class="btn btn-danger">Delete All</a></td>  
+								<td><a href="cart.php?quantity=<?php echo $totalquantity?>&totalprice=<?php echo $totalprice?>&action=buyall" class="btn btn-primary">Buy All</a></td>
 							</tr>					
 					</tbody>
 				</table>

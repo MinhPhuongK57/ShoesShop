@@ -70,6 +70,40 @@
 					?>
 					<div class="clear"> </div>
 				</div>
+							<!----start-load-more-products---->
+				<div class="next__page" style="display:flex;align-items:center;justify-content:center;flex-direction:row">
+						<a href="#" style="color:red;width:30px;height:30px;background:f1f1f1;box-shadow: 3px 1px 15px 2px rgb(201,205,201);
+						text-align:center;line-height:30px;border-radius:5px;margin:10px;">
+						<i class="fas fa-angle-double-left" style="font-size:18px;line-height:30px;"></i></a>	
+						<a href="#" style="color:red;width:30px;height:30px;background:f1f1f1;box-shadow: 3px 1px 15px 2px rgb(201,205,201);
+						text-align:center;line-height:30px;border-radius:5px;margin:5px;">1</a>
+						<a href="#" style="color:red;width:30px;height:30px;background:f1f1f1;box-shadow: 3px 1px 15px 2px rgb(201,205,201);
+						text-align:center;line-height:30px;border-radius:5px;margin:5px;">2</a>
+						<a href="#" style="color:red;width:30px;height:30px;background:f1f1f1;box-shadow: 3px 1px 15px 2px rgb(201,205,201);
+						text-align:center;line-height:30px;border-radius:5px;margin:5px;">3</a>
+						<a href="#" style="color:red;width:30px;height:30px;background:f1f1f1;box-shadow: 3px 1px 15px 2px rgb(201,205,201);
+						text-align:center;line-height:30px;border-radius:5px;margin:5px;">4</a>
+						<a href="#" style="color:red;width:30px;height:30px;background:f1f1f1;box-shadow: 3px 1px 15px 2px rgb(201,205,201);
+						text-align:center;line-height:30px;border-radius:5px;margin:5px;">5</a>
+						<a href="#" style="color:red;width:30px;height:30px;background:f1f1f1;box-shadow: 3px 1px 15px 2px rgb(201,205,201);
+						text-align:center;line-height:30px;border-radius:5px;margin:10px;">6</a>
+						<a href="#" style="color:red;width:30px;height:30px;background:f1f1f1;box-shadow: 3px 1px 15px 2px rgb(201,205,201);
+						text-align:center;line-height:30px;border-radius:5px;margin:5px;">1</a>
+						<a href="#" style="color:red;width:30px;height:30px;background:f1f1f1;box-shadow: 3px 1px 15px 2px rgb(201,205,201);
+						text-align:center;line-height:30px;border-radius:5px;margin:5px;">2</a>
+						<a href="#" style="color:red;width:30px;height:30px;background:f1f1f1;box-shadow: 3px 1px 15px 2px rgb(201,205,201);
+						text-align:center;line-height:30px;border-radius:5px;margin:5px;">3</a>
+						<a href="#" style="color:red;width:30px;height:30px;background:f1f1f1;box-shadow: 3px 1px 15px 2px rgb(201,205,201);
+						text-align:center;line-height:30px;border-radius:5px;margin:5px;">4</a>
+						<a href="#" style="color:red;width:30px;height:30px;background:f1f1f1;box-shadow: 3px 1px 15px 2px rgb(201,205,201);
+						text-align:center;line-height:30px;border-radius:5px;margin:5px;">5</a>
+						<a href="#" style="color:red;width:30px;height:30px;background:f1f1f1;box-shadow: 3px 1px 15px 2px rgb(201,205,201);
+						text-align:center;line-height:30px;border-radius:5px;margin:10px;">6</a>
+						<a href="#" style="color:red;width:30px;height:30px;background:f1f1f1;box-shadow: 3px 1px 15px 2px rgb(201,205,201);
+						text-align:center;line-height:30px;border-radius:5px">
+						<i class="fas fa-angle-double-right" style="font-size:18px;line-height:30px;"></i></a>
+					</div>
+					<!----//End-load-more-products---->
 			</div>
 			<div class="clear"> </div>
 		</div>

@@ -1,7 +1,8 @@
 <?php
 	include "pages/session.php";
 	$id=isset($_COOKIE["id"]) ? $_COOKIE["id"] : "Guest";
-	$gmail=isset($_COOKIE["gmail"]) ? "| LogOut" : "| LogIn";
+	$log = isset($_COOKIE["gmail"]) ? "| Logout" : "| Login";
+
 	$cart = (isset($_SESSION['cart']) ? $_SESSION['cart'] : [] );
 ?>
 <body>
@@ -57,7 +58,7 @@
 					<ul>
 						<li><a href=""><?php echo $id ?><span> </span></li>
 						<li><a href="account.php">settings</a><span> </span></li>
-						<li><a href="pages/delete_cookie.php"><?php echo $gmail ?></a></li>
+						<li><a href="pages/delete_cookie.php"><?php echo $log ?></a></li>
 					</ul>
 				</div>
 				<div class="clear"> </div>

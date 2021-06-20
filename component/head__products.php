@@ -3,7 +3,7 @@
 
 <head>
 	<title>**ShoesShop-DoAn**</title>
-	<link href="<?php echo $level.css__path.'style.css' ?>" rel='stylesheet' type='text/css' />
+	<link href="<?php echo $level.css__path.'style.css'?>" rel='stylesheet' type='text/css' />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script
 		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -22,6 +22,7 @@
 	</script>
 	<!----start-alert-scroller---->
 	<!-- start menu -->
+	<link rel="stylesheet" href="fontawesome-free-5.13.1-web/css/all.min.css">
 	<link href="<?php echo $level.css__path.'megamenu.css' ?>" rel="stylesheet" type="text/css" media="all" />
 	<script type="text/javascript" src="<?php echo $level.js__path.'megamenu.js' ?>"></script>
 	<script>$(document).ready(function () { $(".megamenu").megamenu(); });</script>

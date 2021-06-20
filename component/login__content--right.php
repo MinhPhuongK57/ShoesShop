@@ -11,7 +11,7 @@
 							<span>Password<label>*</label></span>
 							<input type="text" name = "passwordcus"/>
 						</div>
-						<a class="forgot" href="forgot__password.php">Forgot Your Password?</a>
+						<a class="forgot" href="#">Forgot Your Password?</a>
 						<input type="submit" value="Login" name = "login" />
 						
 					</form>

@@ -18,7 +18,22 @@
 											<li><a href="products.php">kids</a></li>
 											<li><a href="products.php">login</a></li>
 										</ul>
+									</div>									
+								</div>
+								
+								<div class="col1">
+									<div class="h_nav">
+										<h4>style zone</h4>
+										<ul>
+											<li><a href="products.php">men</a></li>
+											<li><a href="products.php">women</a></li>
+											<li><a href="products.php">accessories</a></li>
+											<li><a href="products.php">kids</a></li>
+											<li><a href="products.php">brands</a></li>
+										</ul>
 									</div>
+								</div>
+								<div class="col1">
 									<div class="h_nav">
 										<h4 class="top">man</h4>
 										<ul>
@@ -28,30 +43,6 @@
 											<li><a href="#">accessories</a></li>
 											<li><a href="#">kids</a></li>
 											<li><a href="#">style videos</a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="col1">
-									<div class="h_nav">
-										<h4>style zone</h4>
-										<ul>
-											<li><a href="products.php">men</a></li>
-											<li><a href="products.php">women</a></li>
-											<li><a href="products.php">accessories</a></li>
-											<li><a href="products.php">kids</a></li>
-											<li><a href="products.php">brands</a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="col1">
-									<div class="h_nav">
-										<h4>style zone</h4>
-										<ul>
-											<li><a href="products.php">men</a></li>
-											<li><a href="products.php">women</a></li>
-											<li><a href="products.php">accessories</a></li>
-											<li><a href="products.php">kids</a></li>
-											<li><a href="products.php">brands</a></li>
 										</ul>
 									</div>
 								</div>
@@ -78,17 +69,7 @@
 											<li><a href="products.php">brands</a></li>
 										</ul>
 									</div>
-									<div class="h_nav">
-										<h4>help</h4>
-										<ul>
-											<li><a href="products.php">trends</a></li>
-											<li><a href="products.php">sale</a></li>
-											<li><a href="products.php">style videos</a></li>
-											<li><a href="products.php">accessories</a></li>
-											<li><a href="products.php">kids</a></li>
-											<li><a href="products.php">style videos</a></li>
-										</ul>
-									</div>
+									
 								</div>
 								<div class="col1">
 									<div class="h_nav">
@@ -172,17 +153,7 @@
 											<li><a href="products.php">login</a></li>
 										</ul>
 									</div>
-									<div class="h_nav">
-										<h4 class="top">man</h4>
-										<ul>
-											<li><a href="products.php">new arrivals</a></li>
-											<li><a href="products.php">men</a></li>
-											<li><a href="products.php">women</a></li>
-											<li><a href="products.php">accessories</a></li>
-											<li><a href="products.php">kids</a></li>
-											<li><a href="products.php">style videos</a></li>
-										</ul>
-									</div>
+									
 								</div>
 								<div class="col1">
 									<div class="h_nav">
@@ -193,6 +164,19 @@
 											<li><a href="products.php">accessories</a></li>
 											<li><a href="products.php">kids</a></li>
 											<li><a href="products.php">brands</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col1">
+								<div class="h_nav">
+										<h4 class="top">man</h4>
+										<ul>
+											<li><a href="products.php">new arrivals</a></li>
+											<li><a href="products.php">men</a></li>
+											<li><a href="products.php">women</a></li>
+											<li><a href="products.php">accessories</a></li>
+											<li><a href="products.php">kids</a></li>
+											<li><a href="products.php">style videos</a></li>
 										</ul>
 									</div>
 								</div>
@@ -223,17 +207,7 @@
 											<li><a href="products.php">brands</a></li>
 										</ul>
 									</div>
-									<div class="h_nav">
-										<h4 class="top">my company</h4>
-										<ul>
-											<li><a href="products.php">trends</a></li>
-											<li><a href="products.php">sale</a></li>
-											<li><a href="products.php">style videos</a></li>
-											<li><a href="products.php">accessories</a></li>
-											<li><a href="products.php">kids</a></li>
-											<li><a href="products.php">style videos</a></li>
-										</ul>
-									</div>
+									
 								</div>
 								<div class="col1">
 									<div class="h_nav">
@@ -272,7 +246,6 @@
 								<div class="col1"></div>
 								<div class="col1"></div>
 								<div class="col1"></div>
-								<div class="col1"></div>
 							</div>
 						</div>
 					</li>
@@ -291,17 +264,7 @@
 											<li><a href="products.php">brands</a></li>
 										</ul>
 									</div>
-									<div class="h_nav">
-										<h4>my company</h4>
-										<ul>
-											<li><a href="products.php">trends</a></li>
-											<li><a href="products.php">sale</a></li>
-											<li><a href="products.php">style videos</a></li>
-											<li><a href="products.php">accessories</a></li>
-											<li><a href="products.php">kids</a></li>
-											<li><a href="products.php">style videos</a></li>
-										</ul>
-									</div>
+									
 								</div>
 								<div class="col1">
 									<div class="h_nav">
@@ -316,18 +279,7 @@
 										</ul>
 									</div>
 								</div>
-								<div class="col1">
-									<div class="h_nav">
-										<h4>my company</h4>
-										<ul>
-											<li><a href="products.php">trends</a></li>
-											<li><a href="products.php">sale</a></li>
-											<li><a href="products.php">style videos</a></li>
-											<li><a href="products.php">accessories</a></li>
-											<li><a href="products.php">kids</a></li>
-											<li><a href="products.php">style videos</a></li>
-										</ul>
-									</div>
+								<div class="col1">									
 								</div>
 								<div class="col1">
 									<div class="h_nav">
@@ -383,15 +335,7 @@
 											<li><a href="products.php">login</a></li>
 										</ul>
 									</div>
-									<div class="h_nav">
-										<h4 class="top">man</h4>
-										<ul>
-											<li><a href="products.php">new arrivals</a></li>
-											<li><a href="products.php">accessories</a></li>
-											<li><a href="products.php">kids</a></li>
-											<li><a href="products.php">style videos</a></li>
-										</ul>
-									</div>
+									
 									<div class="col1"></div>
 									<div class="col1"></div>
 									<div class="col1"></div>

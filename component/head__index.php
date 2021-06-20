@@ -22,6 +22,7 @@
 	</script>
 	<!----start-alert-scroller---->
 	<!-- start menu -->
+	<link rel="stylesheet" href="fontawesome-free-5.13.1-web/css/all.min.css">
 	<link href="<?php echo $level.css__path.'megamenu.css' ?>" rel="stylesheet" type="text/css" media="all" />
 	<script type="text/javascript" src="<?php echo $level.js__path.'megamenu.js' ?>"></script>
 	<script>$(document).ready(function () { $(".megamenu").megamenu(); });</script>

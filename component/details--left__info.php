@@ -1,11 +1,7 @@
-<?php
-	include "pages/index__data.php";
-	$listdetail = $list__product_detail_rowsdata;
-	
-?>
+
 					<div class="details-left-info">
 						<div class="details-right-head">
-							<?php foreach ($listdetail as $mangdel)
+							<?php foreach ($list__product_detail_rowsdata as $mangdel)
 							{
 							?>
 							<h1><?php echo $mangdel["productname"] ?></h1>

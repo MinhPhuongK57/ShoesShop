@@ -1,38 +1,5 @@
-<!-- <?php
-	$mangimages = array(
-		array(
-			"images1" => "images/product-slide/image2_thumb.jpg",
-			"images2" => "images/product-slide/image2_large.jpg"
-		),
-		array(
-			"images1" => "images/product-slide/image3_thumb.jpg",
-			"images2" => "images/product-slide/image3_large.jpg"
-		),
-		array(
-			"images1" => "images/product-slide/image4_thumb.jpg",
-			"images2" => "images/product-slide/image4_large.jpg"
-		),
-		array(
-			"images1" => "images/product-slide/image5_thumb.jpg",
-			"images2" => "images/product-slide/image5_large.jpg"
-		),
-		array(
-			"images1" => "images/product-slide/image6_thumb.jpg",
-			"images2" => "images/product-slide/image6_large.jpg"
-		)
-	)
-?>  -->
-<?php
 
-	$level = "";
-	include $level."pages/database.php";
-	$id = isset($_GET['id_product']) ? $_GET['id_product'] : '';
-	$SQL_product_detail = "SELECT * from product where id_product = '$id'";
-	$list__product_detail = $connect->prepare($SQL_product_detail);
-	$list__product_detail -> execute();
-	$list__product_detail_rowsdata = $list__product_detail ->fetchAll();
 
-?>
 <!--- start-content---->
 <div class="content details-page">
 		<!---start-product-details--->
