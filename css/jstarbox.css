@@ -3,6 +3,17 @@
 	display: inline-block;
 	line-height: 0;
 }
+.custom {
+	width:130px;border:none;background:transparent;display: block;
+    font-size: 0.875em;
+    color: #A5A5A5;
+    text-transform: capitalize;
+    line-height: 1.8em;
+    border-bottom: 1px solid #eee;
+    padding: 0.5em 0;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+}
 
 .starbox .colorbar,
 .starbox .ghost {

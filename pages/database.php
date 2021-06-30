@@ -16,4 +16,3 @@
         echo $err->getMessage();
         exit(1);
     }
-?>

@@ -30,7 +30,18 @@ body{
 	width:70%;
 	margin:0 auto;
 }
-  
+.custom {
+	width:130px;border:none;background:transparent;display: block;
+    font-size: 0.875em;
+    color: #A5A5A5;
+    text-transform: capitalize;
+    line-height: 1.8em;
+    border-bottom: 1px solid #eee;
+    padding: 0.5em 0;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+}
+ 
 .top-header{
 	background:#08080B;
 }
@@ -1751,6 +1762,7 @@ h2.resp-accordion:first-child {
 	-moz-transition: 0.5s all;
 	-o-transition: 0.5s all;
 }
+
 .content-left-top-brands ul li a:hover{
 	color:#E45D5D;
 }

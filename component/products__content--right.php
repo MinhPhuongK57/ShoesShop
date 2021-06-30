@@ -2,7 +2,7 @@
 			<div class="content-right product-box">
 				<div class="product-box-head">
 					<div class="product-box-head-left">
-						<h3>Products <span>(500)</span></h3>
+						<h3>Products <span>()</span></h3>
 					</div>
 					<div class="product-box-head-right">
 						<ul>
